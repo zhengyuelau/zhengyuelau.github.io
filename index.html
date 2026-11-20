@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Mechanical Design Engineer</title>
+  <meta name="description" content="Portfolio of Your Name, a mechanical engineer designing compact electromechanical products.">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --text: #1c1c1c;
+      --muted: #666;
+      --accent: #1d5fd1;
+      --card: #ffffff;
+      --border: #e3e3df;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141414;
+        --text: #ececec;
+        --muted: #a0a0a0;
+        --accent: #6ea2ff;
+        --card: #1d1d1d;
+        --border: #2e2e2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 56px 0 32px; }
+    h1 { font-size: 2.2rem; margin: 0 0 8px; line-height: 1.2; }
+    .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 20px; }
+    nav a, .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 18px;
+      font-weight: 600;
+    }
+    nav a:hover, .links a:hover { text-decoration: underline; }
+    section { padding: 32px 0; border-top: 1px solid var(--border); }
+    h2 { font-size: 1.4rem; margin: 0 0 16px; }
+    h3 { font-size: 1.05rem; margin: 28px 0 8px; }
+    .summary {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    .meta { color: var(--muted); font-size: 0.9rem; margin: -8px 0 16px; }
+    .placeholder {
+      background: var(--card);
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--muted);
+      margin: 16px 0;
+    }
+    img { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 16px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; }
+    ul { padding-left: 20px; }
+    .stats { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+    .stat {
+      flex: 1 1 140px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .stat strong { display: block; font-size: 1.3rem; }
+    .stat span { color: var(--muted); font-size: 0.85rem; }
+    footer { padding: 32px 0 56px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Your Name</h1>
+      <p class="tagline">Mechanical design engineer. I design compact, manufacturable electromechanical products.</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <h2>Selected projects</h2>
+
+      <!-- PROJECT 1: copy this whole block for each extra project -->
+      <article>
+        <h3>Wrist-worn sensor enclosure: designed for injection moulding</h3>
+        <p class="meta">Personal project &middot; CAD in NX / SolidWorks &middot; SLA-printed prototypes</p>
+
+        <div class="summary">
+          Redesigned a 38&nbsp;mm wearable sensor housing from a CNC-machined prototype into a
+          three-part, injection-mouldable design, reducing mass and part count while keeping IP67 sealing.
+        </div>
+
+        <!-- Replace this box with: <img src="images/hero-render.jpg" alt="Exploded view of the enclosure"> -->
+        <div class="placeholder">Hero image: exploded view render</div>
+
+        <div class="stats">
+          <div class="stat"><strong>14.1 g &rarr; 11.4 g</strong><span>Mass</span></div>
+          <div class="stat"><strong>7 &rarr; 3</strong><span>Part count</span></div>
+          <div class="stat"><strong>IP67</strong><span>Sealing, 1 m / 30 min</span></div>
+        </div>
+
+        <h3>The problem</h3>
+        <p>
+          The original prototype was machined from aluminium, used four screws and a gasket,
+          and could not be produced affordably above a few hundred units. The brief was a waterproof
+          housing under 12&nbsp;g that a user could open once to replace the battery.
+        </p>
+
+        <h3>My role</h3>
+        <p>Sole designer: concept, CAD, tolerance analysis, prototyping and testing.</p>
+
+        <h3>Key decisions</h3>
+        <table>
+          <tr><th>Decision</th><th>Why</th></tr>
+          <tr><td>PC-ABS shell with ultrasonic-welded back</td><td>Removed screws, cut assembly time, gave a reliable seal</td></tr>
+          <tr><td>1.2&nbsp;mm nominal wall with ribs at the strap lugs</td><td>Kept mass down while meeting the lug pull-test load</td></tr>
+          <tr><td>Snap-fit battery door with captive silicone seal</td><td>Allowed tool-free user servicing</td></tr>
+          <tr><td>Single parting line along the side edge</td><td>Avoided witness lines on the top face</td></tr>
+        </table>
+
+        <div class="placeholder">Image: wall-thickness / draft-angle check</div>
+        <div class="placeholder">Image: FEA plot of the strap lug under 50 N</div>
+
+        <h3>Iteration</h3>
+        <p>
+          Version 1 cracked at the snap-fit root. Version 2 added a fillet and increased the hook
+          engagement, and passed 50 open/close cycles.
+        </p>
+
+        <h3>What I would do next</h3>
+        <ul>
+          <li>Run mould-flow analysis for gate location and weld lines</li>
+          <li>Trial a second material for scratch resistance</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm a mechanical engineer with a background in electromechanical and precision systems.
+        I enjoy small, tightly packaged products where mass, tolerances and manufacturability all matter.
+        I'm looking for a product design engineering role in consumer hardware.
+      </p>
+      <!-- Optional photo: <img src="images/me.jpg" alt="Your Name" style="max-width:200px"> -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="links">
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a href="cv.pdf">Download CV</a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 Your Name
+    </footer>
+
+  </div>
+</body>
+</html>
